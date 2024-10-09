@@ -1,4 +1,7 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
+import fb from "../assets/images/icon-facebook.svg";
+import insta from "../assets/images/icon-instagram.svg";
+import pinte from "../assets/images/icon-pinterest.svg";
 
 export default function Launch () {
    const launchDay = new Date('2025-11-10T00:00:00');
@@ -77,6 +80,12 @@ export default function Launch () {
                     <span className="text-primary-grayishblue text-lg uppercase font-medium">Seconds</span>
                 </div>
 
+            </div>
+
+            <div className="flex space-x-4 items-center">
+                <div><img className="w-7" src={fb} alt="" /></div>
+                <div><img className="w-7" src={pinte} alt="" /></div>
+                <div><img className="w-7" src={insta} alt="" /></div>
             </div>
 
             </div>
