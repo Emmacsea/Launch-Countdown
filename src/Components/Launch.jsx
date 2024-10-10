@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
-import fb from "../assets/images/icon-facebook.svg";
-import insta from "../assets/images/icon-instagram.svg";
-import pinte from "../assets/images/icon-pinterest.svg";
+import { FaFacebookF, FaInstagram, FaPinterest } from 'react-icons/fa';
 
 export default function Launch () {
    const launchDay = new Date('2025-11-10T00:00:00');
@@ -82,10 +80,17 @@ export default function Launch () {
 
             </div>
 
-            <div className="flex space-x-4 items-center">
-                <div><img className="w-7" src={fb} alt="" /></div>
-                <div><img className="w-7" src={pinte} alt="" /></div>
-                <div><img className="w-7" src={insta} alt="" /></div>
+            <div className="flex space-x-4 items-center mt-40">
+                <a className="rounded-full w-6 h-6" href="http://www.facebook.com" target="_blank">
+                    <FaFacebookF className="hover:bg-primary-softred text-lg bg-primary-grayishblue text-neutral-vdarkblue font-medium"/>
+                </a>
+                <a className="rounded-full w-6 h-6" href="http://www.facebook.com" target="_blank">
+                    <FaPinterest className="hover:bg-primary-softred text-lg bg-primary-grayishblue text-neutral-vdarkblue font-medium"/>
+                </a>
+                <a className="rounded-full w-6 h-6" href="http://www.facebook.com" target="_blank">
+                    <FaInstagram className="hover:bg-primary-softred text-lg bg-primary-grayishblue text-neutral-vdarkblue font-medium"/>
+                </a>
+               
             </div>
 
             </div>
