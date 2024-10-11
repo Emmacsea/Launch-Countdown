@@ -59,22 +59,22 @@ export default function Launch () {
 
             <div className="flex space-x-4 items-center ">
                 <div className="flex flex-col justify-center space-y-3 items-center">
-                <p className="bg-primary-grayishblue p-4 text-primary-softred rounded-md text-6xl font-bold">{timeRemaining.days}</p>
+                <p className="bg-primary-grayishblue p-4 text-primary-softred rounded-md text-6xl font-bold">{(timeRemaining.days) < 10 ? (`0${timeRemaining.days}`) : (timeRemaining.days) }</p>
                     <span className="text-primary-grayishblue text-lg uppercase font-medium">Days</span>
                 </div>
 
                 <div className="flex flex-col justify-center space-y-3 items-center">
-                <p className="bg-primary-grayishblue p-4 text-primary-softred rounded-md text-6xl font-bold">{timeRemaining.hours}</p>
+                <p className="bg-primary-grayishblue p-4 text-primary-softred rounded-md text-6xl font-bold">{(timeRemaining.hours) < 10 ? (`0${timeRemaining.hours}`) : (timeRemaining.hours) }</p>
                     <span className="text-primary-grayishblue text-lg uppercase font-medium">Hours</span>
                 </div>
 
                 <div className="flex flex-col justify-center space-y-3 items-center">
-                <p className="bg-primary-grayishblue p-4 text-primary-softred rounded-md text-6xl font-bold">{timeRemaining.minutes}</p>
+                <p className="bg-primary-grayishblue p-4 text-primary-softred rounded-md text-6xl font-bold">{timeRemaining.minutes < 10 ? (`0${timeRemaining.minutes}`) : timeRemaining.minutes}</p>
                     <span className="text-primary-grayishblue text-lg uppercase font-medium">Minutes</span>
                 </div>
 
                 <div className="flex flex-col justify-center space-y-3 items-center">
-                    <p className="bg-primary-grayishblue p-4 text-primary-softred rounded-md text-6xl font-bold">{timeRemaining.seconds}</p>
+                    <p className="bg-primary-grayishblue p-4 text-primary-softred rounded-md text-6xl font-bold">{(timeRemaining.seconds) < 10 ? (`0${timeRemaining.seconds}`) : (timeRemaining.seconds) }</p>
                     <span className="text-primary-grayishblue text-lg uppercase font-medium">Seconds</span>
                 </div>
 
@@ -84,10 +84,10 @@ export default function Launch () {
                 <a className="rounded-full w-6 h-6" href="http://www.facebook.com" target="_blank">
                     <FaFacebookF className="hover:bg-primary-softred text-lg bg-primary-grayishblue text-neutral-vdarkblue font-medium"/>
                 </a>
-                <a className="rounded-full w-6 h-6" href="http://www.facebook.com" target="_blank">
+                <a className="rounded-full w-6 h-6" href="http://www.pinterest.com" target="_blank">
                     <FaPinterest className="hover:bg-primary-softred text-lg bg-primary-grayishblue text-neutral-vdarkblue font-medium"/>
                 </a>
-                <a className="rounded-full w-6 h-6" href="http://www.facebook.com" target="_blank">
+                <a className="rounded-full w-6 h-6" href="http://www.instagram.com" target="_blank">
                     <FaInstagram className="hover:bg-primary-softred text-lg bg-primary-grayishblue text-neutral-vdarkblue font-medium"/>
                 </a>
                
